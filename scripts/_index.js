@@ -14,3 +14,5 @@ const request = p => new Promise((resolve, reject) => {
   xhttp.open("GET", p, true);
   xhttp.send();
 });
+
+marked.setOptions({});

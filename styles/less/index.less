@@ -5,6 +5,14 @@
 
 * { margin-top: 1px; }
 
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #666; }
+::-webkit-scrollbar-track {  background-color: #646464;}
+::-webkit-scrollbar-track-piece { background-color: #000;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #646464; }
+::-webkit-resizer { background-color: #666;}
+
 @outerspace: rgb( 60,  65,  70);
 @innerspace: rgb( 45,  50,  55);
 @deep      : rgb( 40,  45,  50);
@@ -20,7 +28,16 @@ html, body
   min-height: 100%;
   margin: 0;
   padding: 0;
-  background: @innerspace
+  background: @innerspace;
+  
+  scrollbar-face-color: #646464;
+  scrollbar-base-color: #646464;
+  scrollbar-3dlight-color: #646464;
+  scrollbar-highlight-color: #646464;
+  scrollbar-track-color: #000;
+  scrollbar-arrow-color: #000;
+  scrollbar-shadow-color: #646464;
+  scrollbar-dark-shadow-color: #646464;
 }
 
 body { height: 100%; }
@@ -158,14 +175,15 @@ hr {
     padding: 0; 
 }
 
-pre code[class*='language-']
+pre code[class*='lang-']
 {
   background: @deep;
   padding: 10px;
   border-radius: 10px;
+  display: block;
 }
 
-code
+code:not(pre > code)
 {
   background: @deep;
   padding: 1px;
