@@ -1,0 +1,3 @@
+NSFW is an abbreviation for words like Not Safe For Wife, Not Suitable For Work, but mostly accepted as Not Safe For Work.
+
+It is an internet slang that is often used to describe online posts that are mainly associated with heavy nudity, sexual, heavy profanity and other things that could often link with pornography. Most of the time, NSFW is used for a fandom of some sort when people want to discuss and share the sexual and porno side of the fandom.

@@ -1,0 +1,182 @@
+// out: ../css/index.css
+
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Fira+Mono';
+
+* { margin-top: 1px; }
+
+@outerspace: rgb( 60,  65,  70);
+@innerspace: rgb( 45,  50,  55);
+@deep      : rgb( 40,  45,  50);
+@logo-color: rgb( 46, 157, 251);
+@disc-color: rgb(113, 143, 216);
+
+@container-width: 600px;
+
+html, body
+{
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background: @innerspace
+}
+
+.wrapper
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  min-width: 800px;
+  min-height: 500px;
+  background: @innerspace;
+  justify-content: center;
+  align-items: center;
+}
+
+.container
+{
+  display: inline-block;
+  width: @container-width;
+  background: @outerspace;
+  border-radius: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  
+  .top,
+  .bottom
+  {
+    display: block;
+    width: 100%;
+    height: 100px;
+  }
+  
+  .top
+  {
+    background: @disc-color;
+    border-radius: 20px 20px 0 0;
+    
+    img {
+      display: inline-block;
+      width: 75px;
+      height: 75px;
+      border-radius: 100%;
+      margin-top: calc(25px / 2);
+      margin-left: calc(25px / 2);
+      box-shadow: 0px 0px 20px darken(@disc-color, 10%);
+    }
+    
+    .top-title
+    {
+      display: inline-flex;
+      width: @container-width;
+      height: 100px;
+      position: relative;
+      top: -91px;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Fira Mono', monospace;
+      color: white;
+      font-size: 25px;
+    }
+    
+  }
+  
+  .bottom
+  {
+    background: @disc-color;
+    border-radius: 0 0 20px 20px;
+    width: calc(~'@{container-width} - 20px');
+    height: 80px;
+    padding: 10px;
+    
+    .copy_rights
+    {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Fira Mono', monospace;
+    }
+  }
+  
+  .body
+  {
+    display: block;
+    width: 100%;
+    min-height: 300px;
+  }
+  
+}
+
+.img-button
+{
+  background: @deep;
+  height: 30px;
+  width: inline-block;
+  padding: 5px;
+  border-radius: 7.5px;
+}
+
+.content
+{
+  width: calc(~'100% - 20px');
+  padding: 10px;
+  padding-top: 0;
+  
+  color: #ccc;
+  font-family: 'Fira Mono', monospace;
+  
+}
+
+a, a:visited
+{
+  color: @disc-color;
+  text-decoration: none;
+  
+  &:hover
+  {
+    color: lighten(@disc-color, 10%);
+    text-decoration: underline;
+  }
+  
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid lighten(@outerspace, 20%);
+    margin: 1em 0;
+    padding: 0; 
+}
+
+pre code[class*='language-']
+{
+  background: @deep;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+code
+{
+  background: @deep;
+  padding: 1px;
+}
+
+.spacer-1
+{
+  display: block;
+  width: 100%;
+  height: 14px;
+}
+
+blockquote
+{
+  margin-left: 15px;
+  border-left: 3px solid @disc-color;
+  padding: 1px 0 1px 10px;
+}

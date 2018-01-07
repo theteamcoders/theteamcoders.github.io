@@ -1,0 +1,1 @@
+A sub network is a community that is siblings with other communities in a specified network ("A Discord Server with multiple roles that gives access to different channels.").
