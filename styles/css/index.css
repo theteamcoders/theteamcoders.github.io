@@ -21,14 +21,13 @@ body {
   background: #2d3237;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 .container {
   display: inline-block;
   width: 600px;
   background: #3c4146;
   border-radius: 20px;
+  align-self: center;
 }
 .container .top,
 .container .bottom {
