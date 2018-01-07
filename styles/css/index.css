@@ -157,7 +157,7 @@ pre code[class*='lang-'] {
   border-radius: 10px;
   display: block;
 }
-code:not(pre > code) {
+:not(pre) > code {
   background: #282d32;
   padding: 1px;
 }

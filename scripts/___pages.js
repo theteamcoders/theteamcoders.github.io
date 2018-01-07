@@ -12,7 +12,7 @@ window.loadPage = async () =>
   }
   
   var relative = location.href.split('#')[1].toLowerCase() + '.md';
-  var publicFolder = './public';
+  var publicFolder = 'http://';
   var e = document.getElementById('content');
   request(publicFolder + relative)
     .then(text => {
